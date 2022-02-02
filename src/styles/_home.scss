@@ -1,0 +1,89 @@
+.home {
+	position: relative;
+
+	.text__image {
+		background: $colorBlue;
+		.row {
+			.text {
+				padding: 8rem 0 0 5rem;
+				.success {
+					button {
+						background: rgb(247, 18, 132);
+						border-radius: 20px;
+						border: none;
+						&:hover {
+							background: rgb(243, 97, 97);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.produits {
+		margin-top: 30px;
+		margin-bottom: 3rem;
+		.card {
+			border-radius: 10px;
+			height: 190px;
+			width: 20rem;
+			transition: .3s ease-in-out;
+
+			&:hover {
+				background: $colorBlue;
+				box-shadow: 0 0 5px 3px rgba(121, 120, 120, 0.445);
+				transform: scale(1.07);
+			}
+			&:hover .row h6,
+			&:hover .details a {
+				color: white;
+
+				// 3 articles au millieu
+			}
+			.details {
+				display: none;
+				transition: all 1s ease-in-out;
+			}
+			&:hover .details {
+				display: initial;
+				transform: translateY(-30px);
+				font-size: 1.1rem;
+				font-weight: 500;
+
+				&:hover a {
+					padding: 2px;
+				}
+			}
+
+			// fin 3 articles
+		}
+	}
+
+	// styles composant articles
+	.products {
+		
+		.container-fluid {
+
+			.row {
+
+				.choose {
+
+					.new {
+			
+						
+						.active {
+							color: $colorBlue;
+						}
+			
+						h1,
+						h2 {
+							font-size: 1.5rem;
+							margin-left: 20px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.encours {
+	.container {
+		.row {
+			background: white;
+
+			.info--command {
+				div {
+					line-height: 3px;
+				}
+
+				.h6 {
+					color: gray;
+				}
+
+				.btn {
+					background: rgb(240, 8, 124);
+					color: white;
+					border-radius: 15px;
+				}
+			}
+
+			.info--article {
+				.donne {
+					line-height: 5px;
+				}
+			}
+
+			.coordonnees {
+				a {
+					.active {
+						color: $colorBlue;
+					}
+				}
+			}
+		}
+	}
+
+	.details--content {
+		display: none;
+		position: absolute;
+		background: rgba(51, 51, 51, 0.568);
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 100;
+	}
+
+	.show--content {
+		display: initial;
+		background: rgba(51, 51, 51, 0.568);
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 100;
+
+		.over--content {
+			background: white;
+			width: 500px;
+			height: 350px;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			.card {
+				height: 240px;
+
+				.card-content {
+					line-height: 14px;
+				}
+			}
+		}
+	}
+}

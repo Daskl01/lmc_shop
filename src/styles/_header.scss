@@ -1,0 +1,29 @@
+.header {
+	.container {
+		margin-left: 80px;
+		.row {
+			.form {
+				width: 300px;
+			}
+			.logo {
+				a {
+					span {
+						font-size: 1.8rem;
+						font-weight: bold;
+						color: $colorBlue;
+
+						&:nth-child(2) {
+							color: $colorBlack;
+						}
+					}
+				}
+				.text-title {
+					color: $colorBlue;
+				}
+			}
+			select {
+				border: none;
+			}
+		}
+	}
+}

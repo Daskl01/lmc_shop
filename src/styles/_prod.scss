@@ -1,0 +1,63 @@
+.prod {
+	background: rgba(180, 180, 180, 0.288);
+	border-radius: 20px;
+	.row {
+		gap: 23px;
+		padding: 20px 0 10px 25px;
+		.card {
+			border-radius: 10px;
+		
+			button {
+				&:nth-child(1) {
+					border-radius: 10px;
+					padding: .5rem 2.4rem;
+					background: $colorBlue;
+				}
+			}
+			.h6{
+				font-size: 1rem;
+			}
+			.image {
+				transition: .4s ease-in-out;
+				text-align: center;
+				margin-bottom: 1rem;
+				img {
+					width: 8.5rem;
+					height: 9.5rem;
+				}
+			}
+			.image:hover {
+				transform: scale(1.06);
+			}
+
+			a {
+				div{
+					border-radius: 10px;
+					padding: .5rem 1rem;
+					border: .3px solid $colorBlue;
+
+					&:hover {
+						background: $colorBlue;
+						color: white;
+					}
+				}
+			}
+		}
+
+		.voir-plus {
+			button {
+				border-radius: 15px;
+				padding: .5rem 2.7rem;
+				font-weight: 600;
+				border: .3px solid $colorBlue;
+
+				&:hover {
+					background: $colorBlue;
+					color: white;
+				}
+			}
+		}
+
+
+	}
+}
